@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _;
@@ -44,7 +44,7 @@ function unionWith(... $arrays): array
     $comparator = \array_pop($arrays);
 
     if (!\is_callable($comparator)) {
-        throw new \InvalidArgumentException(__FUNCTION__.' expects the last value passed to be callable');
+        throw new \InvalidArgumentException(__FUNCTION__ . ' expects the last value passed to be callable');
     }
 
     return baseUniq(baseFlatten($arrays, 1, '\is_array', true), null, $comparator);

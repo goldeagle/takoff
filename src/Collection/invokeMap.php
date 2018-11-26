@@ -3,10 +3,10 @@
 // No 'declare(strict_types=1)' here as the invoked method needs to use weak-type
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -22,9 +22,9 @@ use function _\internal\baseRest;
  *
  * @category Collection
  *
- * @param iterable              $collection The collection to iterate over.
- * @param array|callable|string $path       The path of the method to invoke or the function invoked per iteration.
- * @param array                 $args       The arguments to invoke each method with.
+ * @param iterable $collection The collection to iterate over.
+ * @param array|callable|string $path The path of the method to invoke or the function invoked per iteration.
+ * @param array $args The arguments to invoke each method with.
  *
  * @return array the array of results.
  * @example

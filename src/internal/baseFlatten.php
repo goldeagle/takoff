@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _\internal;
@@ -16,11 +16,11 @@ namespace _\internal;
  *
  * @private
  *
- * @param array|null    $array     The array to flatten.
- * @param int           $depth     The maximum recursion depth.
+ * @param array|null $array The array to flatten.
+ * @param int $depth The maximum recursion depth.
  * @param callable|null $predicate The function invoked per iteration [isFlattenable].
- * @param bool|null     $isStrict  Restrict to values that pass `predicate` checks.
- * @param array|null    $result    The initial result value.
+ * @param bool|null $isStrict Restrict to values that pass `predicate` checks.
+ * @param array|null $result The initial result value.
  *
  * @return array Returns the new flattened array.
  */

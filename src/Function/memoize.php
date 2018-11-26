@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
+ * @author  goldeagle <1308362@gmail.com>
  * @copyright  Copyright (c) 2018
  */
 
@@ -25,7 +25,7 @@ namespace _;
  *
  * @category Function
  *
- * @param callable      $func     The function to have its output memoized.
+ * @param callable $func The function to have its output memoized.
  * @param callable|null $resolver The function to resolve the cache key.
  *
  * @return callable Returns the new memoized function.
@@ -54,7 +54,8 @@ namespace _;
  */
 function memoize(callable $func, callable $resolver = null)
 {
-    $memoized = new class($func, $resolver ?? null) {
+    $memoized = new class($func, $resolver ?? null)
+    {
 
         /**
          * @var CacheInterface

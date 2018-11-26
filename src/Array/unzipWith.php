@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -20,7 +20,7 @@ use function _\internal\arrayMap;
  *
  * @category Array
  *
- * @param array         $array    The array of grouped elements to process.
+ * @param array $array The array of grouped elements to process.
  * @param callable|null $iteratee The function to combine regrouped values.
  *
  * @return array the new array of regrouped elements.

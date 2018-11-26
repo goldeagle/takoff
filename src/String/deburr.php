@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -76,11 +76,11 @@ const reLatin = '/[\xc0-\xd6\xd8-\xf6\xf8-\xff\x{0100}-\x{017f}]/u';
 const rsComboMarksRange = '\\x{0300}-\\x{036f}';
 const reComboHalfMarksRange = '\\x{fe20}-\\x{fe2f}';
 const rsComboSymbolsRange = '\\x{20d0}-\\x{20ff}';
-const rsComboRange = rsComboMarksRange.reComboHalfMarksRange.rsComboSymbolsRange;
+const rsComboRange = rsComboMarksRange . reComboHalfMarksRange . rsComboSymbolsRange;
 
 /** Used to compose unicode capture groups to match [combining diacritical marks](https =>//en.wikipedia.org/wiki/Combining_Diacritical_Marks) and
  * [combining diacritical marks for symbols](https =>//en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols). */
-const rsCombo = '#['.rsComboRange.']#u';
+const rsCombo = '#[' . rsComboRange . ']#u';
 
 /**
  * Deburrs `string` by converting

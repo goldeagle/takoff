@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _\internal;
@@ -22,7 +22,7 @@ namespace _\internal;
  */
 function unicodeToArray(string $string): array
 {
-    if (\preg_match_all('#'.reUnicode.'#u', $string, $matches)) {
+    if (\preg_match_all('#' . reUnicode . '#u', $string, $matches)) {
         return $matches[0];
     }
 

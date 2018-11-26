@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _\internal;
@@ -16,8 +16,8 @@ use function _\property;
 /**
  * Checks if the given arguments are from an iteratee call.
  *
- * @param mixed $value  The potential iteratee value argument.
- * @param mixed $index  The potential iteratee index or key argument.
+ * @param mixed $value The potential iteratee value argument.
+ * @param mixed $index The potential iteratee index or key argument.
  * @param mixed $object The potential iteratee object argument.
  *
  * @return boolean Returns `true` if the arguments are from an iteratee call, else `false`.

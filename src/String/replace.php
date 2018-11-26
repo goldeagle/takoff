@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _;
@@ -19,8 +19,8 @@ namespace _;
  *
  * @category String
  *
- * @param string          $string      The string to modify.
- * @param string          $pattern     The pattern to replace.
+ * @param string $string The string to modify.
+ * @param string $pattern The pattern to replace.
  * @param callable|string $replacement The match replacement.
  *
  * @return string Returns the modified string.

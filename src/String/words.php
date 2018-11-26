@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -22,8 +22,8 @@ const hasUnicodeWord = '/[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[
  *
  * @category String
  *
- * @param    string $string  The string to inspect.
- * @param   string  $pattern The pattern to match words.
+ * @param    string $string The string to inspect.
+ * @param   string $pattern The pattern to match words.
  *
  * @return array Returns the words of `string`.
  *

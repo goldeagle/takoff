@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _;
@@ -29,8 +29,8 @@ use function _\internal\baseIteratee;
  *
  * @category Collection
  *
- * @param array|object          $collection The collection to iterate over.
- * @param callable|string|array $iteratee   The function invoked per iteration.
+ * @param array|object $collection The collection to iterate over.
+ * @param callable|string|array $iteratee The function invoked per iteration.
  *
  * @return array Returns the new mapped array.
  * @example

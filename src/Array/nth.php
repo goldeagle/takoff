@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -18,7 +18,7 @@ namespace _;
  * @category Array
  *
  * @param array $array The array to query.
- * @param int   $n     The index of the element to return.
+ * @param int $n The index of the element to return.
  *
  * @return mixed Returns the nth element of `array`.
  * @example

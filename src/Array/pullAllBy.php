@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -23,8 +23,8 @@ use function _\internal\basePullAll;
  *
  * @category Array
  *
- * @param array    $array    The array to modify.
- * @param array    $values   The values to remove.
+ * @param array $array The array to modify.
+ * @param array $values The values to remove.
  * @param callable $iteratee The iteratee invoked per element.
  *
  * @return array `array`.

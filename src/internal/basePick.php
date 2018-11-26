@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
+ * @author  goldeagle <1308362@gmail.com>
  * @copyright  Copyright (c) 2018
  */
 
@@ -14,6 +14,6 @@ namespace _\internal;
 function basePick($object, $paths): \stdClass
 {
     return basePickBy($object, $paths, function ($value, $path) use ($object) {
-        return property_exists($object, $path) || method_exists($object, 'get'.(ucfirst($path)));
+        return property_exists($object, $path) || method_exists($object, 'get' . (ucfirst($path)));
     });
 }

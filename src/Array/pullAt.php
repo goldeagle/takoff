@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -19,7 +19,7 @@ namespace _;
  *
  * @category Array
  *
- * @param array     $array   The array to modify.
+ * @param array $array The array to modify.
  * @param int|int[] $indexes The indexes of elements to remove.
  *
  * @return array the new array of removed elements.
@@ -37,7 +37,7 @@ namespace _;
  */
 function pullAt(array &$array, $indexes): array
 {
-    $indexes = (array) $indexes;
+    $indexes = (array)$indexes;
     $pulled = [];
 
     $array = \array_filter($array, function ($val, $key) use ($indexes, &$pulled) {

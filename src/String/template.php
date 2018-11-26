@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _;
@@ -41,8 +41,8 @@ const stringEscapes = [
  *
  * @category String
  *
- * @param string $string  The template string.
- * @param array  $options The options array.
+ * @param string $string The template string.
+ * @param array $options The options array.
  *                        RegExp $options['escape'] = _::$templateSettings['escape'] The HTML "escape" delimiter.
  *                        RegExp $options['evaluate'] = _::$templateSettings['evaluate'] The "evaluate" delimiter.
  *                        array  $options['imports'] = _::$templateSettings['imports'] An object to import into the template as free variables.
@@ -106,7 +106,7 @@ function template(string $string, array $options = []): callable
         ($options['evaluate'] ?? reNoMatch),
     ]);
 
-    $string = \preg_replace_callback('#'.$reDelimiters.'#u', function ($matches) {
+    $string = \preg_replace_callback('#' . $reDelimiters . '#u', function ($matches) {
         list(,
             $escapeValue,
             $interpolateValue,
@@ -142,7 +142,8 @@ function template(string $string, array $options = []): callable
 
     $imports = $options['imports'] ?? [];
 
-    return new class($string, $imports) {
+    return new class($string, $imports)
+    {
         public $source;
 
         private $imports;
@@ -172,7 +173,7 @@ function template(string $string, array $options = []): callable
                 throw new \RuntimeException('Unable to create temporary file for template');
             }
 
-            \file_put_contents($file, "<?php namespace __template; $imports (function() { extract(".\var_export($arguments, true).'); ?>'.$this->source.'<?php })()?>');
+            \file_put_contents($file, "<?php namespace __template; $imports (function() { extract(" . \var_export($arguments, true) . '); ?>' . $this->source . '<?php })()?>');
 
             $content = attempt(function () use ($file) {
                 \ob_start();

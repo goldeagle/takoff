@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -19,9 +19,9 @@ namespace _;
  *
  * @category Array
  *
- * @param array $array     The array to inspect.
- * @param mixed $value     The value to search for.
- * @param int   $fromIndex The index to search from.
+ * @param array $array The array to inspect.
+ * @param mixed $value The value to search for.
+ * @param int $fromIndex The index to search from.
  *
  * @return int the index of the matched value, else `-1`.
  * @example

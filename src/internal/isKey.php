@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _\internal;
@@ -18,7 +18,7 @@ const reIsPlainProp = '/^\w*$/';
 /**
  * Checks if `value` is a property name and not a property path.
  *
- * @param mixed        $value  The value to check.
+ * @param mixed $value The value to check.
  * @param object|array $object The object to query keys on.
  *
  * @return boolean Returns `true` if `value` is a property name, else `false`.
@@ -33,5 +33,5 @@ function isKey($value, $object = []): bool
         return true;
     }
 
-    return \preg_match(reIsPlainProp, $value) || !\preg_match(reIsDeepProp, $value) || (null !== $object && isset(((object) $object)->$value));
+    return \preg_match(reIsPlainProp, $value) || !\preg_match(reIsDeepProp, $value) || (null !== $object && isset(((object)$object)->$value));
 }

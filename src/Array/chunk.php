@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _;
@@ -18,8 +18,8 @@ namespace _;
  *
  * @category Array
  *
- * @param array $array  array The array to process.
- * @param int   $number [size=1] The length of each chunk
+ * @param array $array array The array to process.
+ * @param int $number [size=1] The length of each chunk
  *
  * @return array Returns the new array of chunks.
  * @example

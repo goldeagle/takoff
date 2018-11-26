@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ *
  */
 
 namespace _;
@@ -17,8 +17,8 @@ namespace _;
  * @category Number
  *
  * @param int $number The number to clamp.
- * @param int $lower  The lower bound.
- * @param int $upper  The upper bound.
+ * @param int $lower The lower bound.
+ * @param int $upper The upper bound.
  *
  * @return int Returns the clamped number.
  *

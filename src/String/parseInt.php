@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the SolidWorx Lodash-PHP project.
+ * This file is part of the goldeagle/takoff project.
  *
- * @author     Pierre du Plessis <open-source@solidworx.co>
- * @copyright  Copyright (c) 2017
+ * @author  goldeagle <1308362@gmail.com>
+ * 
  */
 
 namespace _;
@@ -22,7 +22,7 @@ namespace _;
  * @category String
  *
  * @param int|float|string $string The string to convert.
- * @param int              $radix  The radix to interpret `string` by.
+ * @param int $radix The radix to interpret `string` by.
  *
  * @return int Returns the converted integer.
  *

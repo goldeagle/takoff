@@ -12,7 +12,7 @@ $ composer require goldeagle/takoff
 
 # 使用方法
 
-例：可以独立引用 camelToDash 方法，并使用在代码中：
+可以独立引用 camelToDash 方法，并使用在代码中：
 
 ```php
 <?php
@@ -22,7 +22,7 @@ use function _\camelToDash;
 echo camelToDash('HelloWorld');
 ```
 
-也可以使用全局对象“_”来静态调用方法
+也可以使用全局对象“_”来静态调用方法：
 
 ```php
 <?php
@@ -30,7 +30,7 @@ echo camelToDash('HelloWorld');
 echo _::camelToDash('HelloWorld');
 ```
 
-也可以使用
+还可以直接使用命名空间来引用方法：
 
 ```php
 <?php
@@ -38,17 +38,21 @@ echo _::camelToDash('HelloWorld');
 echo _\camelToDash('HelloWorld');
 ```
 
-# 方法列表
-- [Array](doc/Array.md)
-- [Collection](doc/Collection.md)
-- [Database](doc/Database.md)
-- [Date](doc/Date.md)
-- [Function](doc/Function.md)
-- [Lang](doc/Lang.md)
-- [Math](doc/Math.md)
-- [Net](doc/Net.md)
-- [Number](doc/Number.md)
-- [Object](doc/Object.md)
-- [Seq](doc/Seq.md)
-- [String](doc/String.md)
-- [Util](doc/Util.md)
+# 文档列表
+- [数组 Array](doc/Array.md)
+- [集合 Collection](doc/Collection.md)
+- [数据库 Database](doc/Database.md)
+- [日期 Date](doc/Date.md)
+- [函数 Function](doc/Function.md)
+- [语言扩展 Lang](doc/Lang.md)
+- [数学 Math](doc/Math.md)
+- [网络 Net](doc/Net.md)
+- [数字 Number](doc/Number.md)
+- [对象操作 Object](doc/Object.md)
+- [序列 Seq](doc/Seq.md)
+- [字符串 String](doc/String.md)
+- [工具 Util](doc/Util.md)
+
+# 感谢
+- [lodash](https://lodash.com)
+- [lodash-php](https://github.com/lodash-php/lodash-php)

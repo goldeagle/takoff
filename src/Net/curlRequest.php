@@ -16,7 +16,7 @@ namespace _;
  * @param array $data request parameters
  * @param array $header request headers
  * @param bool $ipv4_only if use ipv4 only for speed
- * @return array|bool
+ * @return array|bool|string
  */
 function curl($url, $data, $header = [], bool $ipv4_only = true): array
 {

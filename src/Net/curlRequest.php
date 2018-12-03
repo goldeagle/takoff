@@ -16,9 +16,9 @@ namespace _;
  * @param array $data request parameters
  * @param array $header request headers
  * @param bool $ipv4_only if use ipv4 only for speed
- * @return array|bool|string
+ * @return mixed
  */
-function curl($url, $data, $header = [], bool $ipv4_only = true): array
+function curl($url, $data, $header = [], bool $ipv4_only = true)
 {
     $headers = [
         'Content-Type: application/json; charset=utf-8',

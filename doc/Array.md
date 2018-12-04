@@ -2,16 +2,15 @@
 
 ### chunk
 
-Creates an array of elements split into groups the length of `size`.
+根据设置的 `size` 将数组中的元素进行分组.
 
-If `array` can't be split evenly, the final chunk will be the remaining
-elements.
+如果 `array` 元素不够整分的，整分剩余的元素将分为一组。
 
 **Arguments:**
 
-@param array $array array The array to process.
+@param array $array 用于处理的数组
 
-@param int $number [size=1] The length of each chunk
+@param int $number [size=1] 每个分组的长度
 
 
 

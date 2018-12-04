@@ -13,7 +13,7 @@ namespace _;
  * 请求
  * @category Net
  * @param string $url request url
- * @param array $data request parameters
+ * @param array|string $data request parameters
  * @param array $header request headers
  * @param bool $ipv4_only if use ipv4 only for speed
  * @return mixed
@@ -22,11 +22,10 @@ function curl($url, $data, $header = [], bool $ipv4_only = true)
 {
     $headers = [
         'Content-Type: application/json; charset=utf-8',
-        'Content-Length: ' . strlen(implode('', $data))
+        'Content-Length: ' . strlen(is_array($data)?implode('', $data):$data)
     ];
-    $header && $headers = array_merge($header, $headers);
+    $header && $headers = array_merge($header, $headers); $curl = curl_init();
 
-    $curl = curl_init();
     //设置提交的url
     curl_setopt($curl, CURLOPT_URL, $url);
     //设置头文件的信息作为数据流输出
@@ -47,3 +46,4 @@ function curl($url, $data, $header = [], bool $ipv4_only = true)
     //获得数据并返回
     return $data;
 }
+
